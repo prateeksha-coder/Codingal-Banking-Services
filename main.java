@@ -7,6 +7,7 @@ public class Main {
         String[] accountName = new String[1000]; // this array will contain the account holder's name
         int option, size = 100;// size will be the first account you want to begin from
         // infinite loop to keep our program running untill we wish to end it.
+        Scanner sc = new Scanner(System.in);
         while (infiniteLoop) {
             System.out.println("Welcome to Codingal Banking Services");
             System.out.println("Banking Menu: ");
@@ -18,7 +19,7 @@ public class Main {
             System.out.println("5-> Summary of All Accounts");
             System.out.println("6-> Quit");
 
-            Scanner sc = new Scanner(System.in);
+            
             System.out.print("Enter your option to proceed ahead: ");
 
             option = sc.nextInt();
@@ -114,17 +115,20 @@ public class Main {
             } else if (option == 6) {
 
                 System.out.println("Terminating...");
-                System.out.println("Developed & Managed by Aashish@Codingal");
-                System.out.println("Built with ❤ in India");
+                System.out.println("Developed & Managed by Prateeksha");
+                System.out.println("Built with 💙 in India");
                 infiniteLoop = false; // instead of this "System.exit(0);" can also be used
             } else {
 
                 System.out.println("\n Invalid input.");
                 System.out.println("Terminating...");
-                System.out.println("Developed & Managed by Aashish@Codingal");
-                System.out.println("Built with ❤ in India");
+                System.out.println("Developed & Managed by Prateeksha");
+                System.out.println("Built with 💙 in India");
                 System.exit(0);
             }
+            
         }
+        sc.close();
+        
     }
 }
